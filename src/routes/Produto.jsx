@@ -1,6 +1,5 @@
-import './Produto.css'
+import './Produto.scss'
 import { useState, useEffect } from 'react'
-import { Container } from 'react-bootstrap'
 import { useNavigate } from "react-router-dom";
 
 import { } from '../api'
@@ -12,10 +11,10 @@ const Produto = () => {
   }, [])
 
   return (
-    <div className='produto'>
-      <Container>
-        
-      </Container>
+    <div className='container'>
+      <div className="produto">
+        <h1>Produto</h1>
+      </div>
     </div>
   )
 }

@@ -1,6 +1,5 @@
-import './Footer.css'
+import './Footer.scss'
 import { useState, useEffect } from 'react'
-import { Container } from 'react-bootstrap'
 import { useNavigate } from "react-router-dom";
 
 import { } from '../api'
@@ -12,9 +11,6 @@ const Footer = () => {
 
   return (
     <div className='footer'>
-      <Container>
-        
-      </Container>
     </div>
   )
 }

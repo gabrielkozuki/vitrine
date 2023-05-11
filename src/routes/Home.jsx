@@ -1,6 +1,5 @@
-import './Home.css'
+import './Home.scss'
 import { useState, useEffect } from 'react'
-import { Container } from 'react-bootstrap'
 import { useNavigate } from "react-router-dom";
 
 import { } from '../api'
@@ -12,10 +11,10 @@ const Home = () => {
   }, [])
 
   return (
-    <div className='home'>
-      <Container>
-        
-      </Container>
+    <div className='container'>
+      <div className="home">
+        <h1>Home</h1>
+      </div>
     </div>
   )
 }

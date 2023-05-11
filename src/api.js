@@ -1,8 +1,7 @@
-import axios from 'axios'
 
-API_DNS = 'https://fakestoreapi.com/'
+const API_DNS = 'https://api.storerestapi.com'
 
-export const getProducts = async(path) => {
+export const getData = async(path) => {
     try {
         let url = API_DNS + path
         const res = fetch(url)

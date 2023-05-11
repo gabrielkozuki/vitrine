@@ -1,18 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './index.css'
+import './index.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from './routes/Home'
 import ListCat from './routes/ListCat'
-import Search from './routes/Search'
 import Produto from './routes/Produto'
 
 const router = createBrowserRouter([
   {
+    path: '/',
     element: <App />,
     children: [
       {
@@ -20,15 +20,11 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/categoria/:id',
+        path: '/listcat',
         element: <ListCat />
       },
       {
-        path: '/pesquisa/:nome',
-        element: <Search />
-      },
-      {
-        path: '/produto/:id',
+        path: '/produto',
         element: <Produto />
       }
     ]

@@ -1,6 +1,5 @@
-import './ListCat.css'
+import './ListCat.scss'
 import { useState, useEffect } from 'react'
-import { Container } from 'react-bootstrap'
 import { useNavigate } from "react-router-dom";
 
 import { } from '../api'
@@ -12,10 +11,10 @@ const ListCat = () => {
   }, [])
 
   return (
-    <div className='listcat'>
-      <Container>
-        
-      </Container>
+    <div className='container'>
+      <div className="listcat">
+        <h1>ListCat</h1>
+      </div>
     </div>
   )
 }
