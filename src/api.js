@@ -1,30 +1,15 @@
 import axios from 'axios'
 
-async function pegarDados(){
-    const options = {
-        method: 'GET',
-        url: 'https://unofficial-shein.p.rapidapi.com/products/search',
-        params: {
-            keywords: 'Computer Bags For Women',
-            language: 'en',
-            country: 'US',
-            currency: 'USD',
-            sort: '7',
-            limit: '20',
-            page: '1'
-        },
-        headers: {
-            'X-RapidAPI-Key': '5d374b6c22msh3872533098cbb45p132882jsn9f8bda8e7e07',
-            'X-RapidAPI-Host': 'unofficial-shein.p.rapidapi.com'
-        }
-    };
-    
+API_DNS = 'https://fakestoreapi.com/'
+
+export const getProducts = async(path) => {
     try {
-        const response = await axios.request(options);
-        console.log(response.data);
-    } catch (error) {
-        console.error(error);
+        let url = API_DNS + path
+        const res = fetch(url)
+
+        return (await res).json()
+        
+    } catch(err) {
+        console.log('error API: ', err);
     }
 }
-
-export { pegarDados };
