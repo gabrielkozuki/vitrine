@@ -20,11 +20,11 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/listcat',
+        path: '/categoria/:slug',
         element: <ListCat />
       },
       {
-        path: '/produto',
+        path: '/produto/:slug',
         element: <Produto />
       }
     ]

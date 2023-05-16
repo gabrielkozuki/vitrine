@@ -32,7 +32,7 @@ const Navbar = () => {
           {categorias?.map((cat) => {
             return (
               <li key={cat._id}>
-                <Link to="/">{cat.name}</Link>
+                <Link to={`/categoria/${cat.slug}`}>{cat.name}</Link>
               </li>
             )
           })}
