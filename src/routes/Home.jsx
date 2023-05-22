@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { } from '../api'
 
 const Home = () => {
-  const navigateTo = useNavigate() // navigateTo(`/rota/${parametro}`)
 
   useEffect(() => {
   }, [])
@@ -13,7 +12,13 @@ const Home = () => {
   return (
     <div className='container'>
       <div className="home">
-        <h1>Home</h1>
+        <h3>Ofertas</h3>
+        <br />
+
+        {/* banner de anuncio <img src="" alt="" /> */}
+
+        <h3>Produtos mais vendidos</h3>
+        <br />
       </div>
     </div>
   )
