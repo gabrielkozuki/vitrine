@@ -3,5 +3,30 @@
     height: 15rem;
     background-color: #802c6e;
 
-    margin-top: 5rem;
+    .col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        color: white;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 5%;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: start;
+
+        i {
+            color: white;
+            margin-right: 1.5rem;
+            cursor: pointer;
+        }
+    }
 }
