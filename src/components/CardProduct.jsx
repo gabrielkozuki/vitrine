@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import './CardProduct.scss'
 
 const CardProduct = ({ data }) => {
     const [produto, setProduto] = useState(data)
+    const navigate = useNavigate()
 
     useEffect(() => {
         console.log(data);
     }, [])
 
     return (
-        <div className="card" style={{ width: '18rem' }}>
+        <div className="card" style={{ width: '18rem' }} onClick={ () => { navigate(`/produto/${produto.slug}`) } }>
             <img className="card-img-top" src={produto.imageSource ? produto.imageSource : "https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"}   />
             <div className="card-body">
                 <div className="linha">
