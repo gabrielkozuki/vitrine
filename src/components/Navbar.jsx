@@ -25,6 +25,7 @@ const Navbar = () => {
     <header className='navbar-container'>
       <Link to="/">
         <h4>Vitrine</h4>
+        <i class="fa-solid fa-store"></i>
       </Link>
       
       <nav>
