@@ -8,7 +8,6 @@ const CardProduct = ({ data }) => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        console.log(data);
     }, [])
 
     return (

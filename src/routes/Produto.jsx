@@ -11,7 +11,6 @@ const Produto = () => {
   async function getProduto() {
     let res = await getData(`/products/${params.slug}`)
     setProduto(res.data)
-    console.log(produto);
   }
 
   useEffect(() => {
@@ -42,7 +41,7 @@ const Produto = () => {
               }
             </div>
           </div>
-          : null
+          : <p>Carregando...</p>
         }
       </div>
     </div>

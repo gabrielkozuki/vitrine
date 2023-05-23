@@ -1,4 +1,8 @@
 .listcat {
     min-height: 80vh;
     margin-top: 2rem;
+
+    .row {
+        justify-content: space-between;
+    }
 }

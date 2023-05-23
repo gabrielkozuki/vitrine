@@ -9,14 +9,13 @@ const ListCat = () => {
   const [data, setData] = useState()
   let params = useParams()
 
-  const getCategorias = async () => {
+  const getCategoria = async () => {
     let res = await getData(`/categories/${params.slug}`)
     setData(res.data)
-    console.log(data);
   }
 
   useEffect(() => {
-    getCategorias()
+    getCategoria()
   }, [params])
 
   return (
@@ -32,7 +31,7 @@ const ListCat = () => {
               })}
             </div>
           </>
-        ) : null }
+        ) : <p>Carregando...</p> }
       </div>
     </div>
   )
