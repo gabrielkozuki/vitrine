@@ -11,14 +11,14 @@ const CardProduct = ({ data }) => {
     }, [])
 
     return (
-        <div className="card" style={{ width: '18rem' }} onClick={ () => { navigate(`/produto/${produto.slug}`) } }>
-            <img className="card-img-top" src={produto.imageSource ? produto.imageSource : "https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"}   />
+        <div className="card" style={{ width: '18rem' }} onClick={ () => { navigate(`/produto/${produto.articles[0].code}`) } }>
+            <img className="card-img-top" src={produto.galleryImages[0].baseUrl ? produto.galleryImages[0].baseUrl : "https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"}   />
             <div className="card-body">
                 <div className="linha">
-                    <h5 className="card-title">{produto.title}</h5>
-                    <h5>R${parseFloat(produto.price).toFixed(2)}</h5>
+                    <h5 className="card-title">{produto.name}</h5>
+                    <h5>{produto.price.formattedValue}</h5>
                 </div>
-                <p className="card-text">{produto.description ? produto.description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur sapien sed faucibus varius."}</p>
+                <p className="card-text">Brand: {produto.brandName}</p>
             </div>
         </div>
     )

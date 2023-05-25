@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <ListCat />
       },
       {
-        path: '/produto/:slug',
+        path: '/produto/:id',
         element: <Produto />
       }
     ]

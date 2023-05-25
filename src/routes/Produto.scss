@@ -1,11 +1,46 @@
 .produto {
     min-height: 80vh;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
 
     .row {
         .col-img {
             display: flex;
             justify-content: center;
+            flex-shrink: 0;
+            max-height: 100%;
+
+            img {
+                max-width: 80%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+
+        .descricao {
+            .d_wrapper {
+                margin-bottom: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    .row-pics {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+
+        .mini-photo {
+            max-height: 200px;
+            width: auto;
+            margin-right: 1rem;
         }
     }
 

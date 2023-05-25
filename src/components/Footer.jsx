@@ -19,10 +19,11 @@ const Footer = () => {
         <div className="col">
           <div className="row">
             <p>2023 @ Feito por Gabriel Kozuki :)</p>
+            <p>Data by <a href="https://rapidapi.com/apidojo/api/hm-hennes-mauritz/" target='_blank'>Api Dojo</a></p>
             <div className="col social-media">
-              <i class="fa-brands fa-linkedin fa-3x" onClick={() => window.open('https://www.linkedin.com/in/gabriel-kozuki/', '_blank')}></i>
-              <i class="fa-brands fa-square-github fa-3x" onClick={() => window.open('https://github.com/gabrielkozuki', '_blank')}></i>
-              <i class="fa-brands fa-square-instagram fa-3x" onClick={() => window.open('https://www.instagram.com/kozuki1_/', '_blank')}></i>
+              <i className="fa-brands fa-linkedin fa-3x" onClick={() => window.open('https://www.linkedin.com/in/gabriel-kozuki/', '_blank')}></i>
+              <i className="fa-brands fa-square-github fa-3x" onClick={() => window.open('https://github.com/gabrielkozuki', '_blank')}></i>
+              <i className="fa-brands fa-square-instagram fa-3x" onClick={() => window.open('https://www.instagram.com/kozuki1_/', '_blank')}></i>
             </div>
           </div>
         </div>
