@@ -1,7 +1,6 @@
 import './Produto.scss'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import DOMPurify from 'dompurify'
 
 import { getProduto } from '../api'
 
